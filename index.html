@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-navbar">
+      <div class="container-fluid align-content-center">
+        <img
+          class="navbar-brand img-logo"
+          src="imagenes/icono.jpg"
+          alt="icono"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarDark"
+          aria-controls="navbarDark"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse show" id="navbarDark">
+          <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/pages/productos.html"
+                >Productos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <h4>Carrito de compras</h4>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Acción</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody id="items"></tbody>
+        <tfoot>
+          <tr id="footer">
+            <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+          </tr>
+        </tfoot>
+      </table>
+      <h1 class="text-center">Seleccione su producto</h1>
+      <div class="row" id="cards"></div>
+    </div>
+
+    <template id="template-footer">
+      <th scope="row" colspan="2">Total productos</th>
+      <td>10</td>
+      <td>
+        <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+          vaciar todo
+        </button>
+        <button class="btn btn-primary btn-sm" id="comprar"><a href="/compra.html" class="link">comprar</a>
+        </button>
+      </td>
+      <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+
+    <template id="template-carrito">
+      <tr>
+        <th scope="row">id</th>
+        <td>Café</td>
+        <td>1</td>
+        <td>
+          <button class="btn btn-info btn-sm">+</button>
+          <button class="btn btn-danger btn-sm">-</button>
+        </td>
+        <td>$ <span>500</span></td>
+      </tr>
+    </template>
+
+    <template id="template-card">
+      <div class="col-6-mb-6" style="width: 18rem">
+        <div class="card">
+          <img src="" alt="" class="card-img-top" />
+          <div class="card-body">
+            <h2>Titulo</h2>
+            <h3>precio</h3>
+            <ul>
+              descp
+            </ul>
+            <button class="btn btn-dark" id="alert">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </template>
+
+
+    <script src="app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  </body>
+</html>

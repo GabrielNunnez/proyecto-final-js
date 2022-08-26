@@ -1,0 +1,37 @@
+[
+  {
+    "nombre": "Cuchilla Artesanal Parrilla y Cocina Para Asado",
+    "id": 1,
+    "precio": 5476,
+    "img": "/imagenes/img-1.jpg",
+    "desc": "Tipos de cuchillos: Artesanal Material de la hoja: Acero al Carbono Material del mango: Asta de Ciervo Largo: 33.5 cm"
+  },
+  {
+    "nombre": "Cuchillo Artesanal De Campo Disco Arado Acero Asado",
+    "id": 2,
+    "precio": 7000,
+    "img": "./imagenes/img-2.jpg",
+    "desc": "Largo de la hoja: 14 cm Material del mango: Madera Material de la hoja: Acero"
+  },
+  {
+    "nombre": "Cuchillo Artesanal Cabo Madera Con Cinco Virolas De Alpaca",
+    "id": 3,
+    "precio": 6000,
+    "img": "/imagenes/img-3.jpg",
+    "desc": "Largo de la hoja: 14 cm Material de la hoja: Acero inoxidable Material del mango: Madera y Alpaca Marca: Dagger"
+  },
+  {
+    "nombre": "Cuchillos Artesanales Trenzado Alpaca Cincelado",
+    "id": 4,
+    "precio": 3500,
+    "img": "/imagenes/img-4.jpg",
+    "desc": "Marca: Dagger Material de la hoja: Acero inoxidable Material del mango: Alpaca Largo de la hoja: 14 cm"
+  },
+  {
+    "nombre": "Juego Asador Kit Asado Set Parrillero X5 Pala Atizado Combo",
+    "id": 5,
+    "precio": 5500,
+    "img": "/imagenes/set-asado.jpg",
+    "desc": "Marca: Dagger Material de la hoja: Acero inoxidable Material del mango: Alpaca largo de la hoja: 14 cm"
+  }
+]
