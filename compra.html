@@ -12,6 +12,7 @@
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
     crossorigin="anonymous"
   />
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body class="class="container-fluid"">
     <nav class="navbar navbar-expand-xl navbar-dark bg-navbar">
@@ -55,32 +56,39 @@
       <div>
         <h1>Finalizar compra</h1>
         <div class="container">
-          <form class="row g-3 mt-4">
+          <form class="row g-3 mt-4" id="form">
             <div class="col-6">
-               <label for="emailImput" class="form-label">1-Informacion del comprador</label>
-               <p>Nombre y apellido</p>
-               <input type="email" class="form-control" id="emailImput" placeholder="">
-               <p>Numero de telefono</p>
-               <input type="email" class="form-control" id="emailImput" placeholder="">
-               <p>Mail</p>
-               <input type="email" class="form-control" id="emailImput" placeholder="">
+               <label for="name" class="form-label mt-2">1-Informacion del comprador</label>
+               <p class="mt-2">Nombre y apellido</p>
+               <input type="text" class="form-control mt-2" id="emailImput" placeholder="">
+               <p class="mt-2">Numero de telefono</p>
+               <input type="text" class="form-control mt-2" id="emailImput" placeholder="">
+               <p class="mt-2">Mail</p>
+               <input type="text" class="form-control mt-2" id="emailImput" placeholder="">
             </div>
             <div class="col-6">
-                <label for="emailImput" class="form-label">2-Direccion donde se envia la compra</label>
-                <input type="email" class="form-control" id="emailImput" placeholder="">
+                <label for="emailImput" class="form-label mt-2">2-Direccion donde se envia la compra</label>
+                <input type="text" class="form-control" id="emailImput" placeholder="">
+             </div>
+             <div class="col-6 ">
+              <p class="mt-2">3-Medio de pago</p>
+                <select class="form-select form-select-lg col-12" aria-label=".form-select-lg example">
+                  <option selected>Selecione su medio de pago</option>
+                  <option value="1">Tarjeta de credito</option>
+                  <option value="2">Transferencia</option>
+                  <option value="3">Efectivo</option>
+                </select>
              </div>
              <div class="col-6">
-                <label for="emailImput" class="form-label">3-Medio de pago</label>
-                <input type="email" class="form-control" id="emailImput" placeholder="">
+                <label for="emailImput" class="form-label mt-2">4-cupon de descuento</label>
+                <input type="text" class="form-control" id="emailImput" placeholder="">
              </div>
-             <div class="col-6">
-                <label for="emailImput" class="form-label">4-cupon de descuento</label>
-                <input type="email" class="form-control" id="emailImput" placeholder="">
-             </div>
+             <input type="submit" class="form-control col-6 mt-2" id="compra" placeholder="">
            </form>
-           <button class="col-4">cancelar compra</button>
-           <button class="col-4">Finalizar compra</button>
+           
 
         </div>
+        <script src="compra.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>

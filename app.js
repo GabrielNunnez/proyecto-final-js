@@ -148,15 +148,3 @@ document.addEventListener('DOMContentLoaded', e => {
         pintarCarrito()
     }
 });
-const btnToastify2 = document.querySelector("#alert")
-btnToastify2.addEventListener("click", ()=> {
-  Toastify({
-    text: "Agregaste un producto al carrito",
-    className: "info",
-    gravity: "center",
-    position:"left",
-    style: {
-      background: "grey",
-    }
-  }).showToast();
-})
